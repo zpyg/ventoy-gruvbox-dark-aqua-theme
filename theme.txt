@@ -1,0 +1,58 @@
+title-text: ""
+desktop-color: "#1d2021"
+
++ boot_menu {
+  left = 10%
+  width = 80%
+  top = 25%
+  height = 50%
+
+  item_font = "JetBrains Mono NL Medium 14"
+  item_color = "#ebdbb2"
+  item_height = 32
+  item_icon_space = 8
+  item_spacing = 2
+
+  selected_item_font = "JetBrains Mono NL Medium Italic 14"
+  selected_item_color= "#fbf1c7"
+  selected_item_pixmap_style = "select_*.png"
+
+  icon_height = 32
+  icon_width = 32
+}
+
++ progress_bar {
+  id = "__timeout__"
+
+  left = 15%
+  top = 85%
+  height = 15
+  width = 70%
+
+  fg_color = "#689d6a"
+  bg_color = "#a89984"
+}
+
++ hbox{ 
+    left = 30%
+    top = 95%
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_HOTKEY_TIP@" color = "#458588" align = "left"} 
+}
+
++ hbox{ 
+    left = 90%
+    top = 5 
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_MEM_DISK@" color = "#cc241d" align = "left"} 
+}
+
++ hbox{ 
+    left = 30%+200
+    top = 95%-25
+    width = 10%
+    height = 25
+    + label {text = "@VTOY_WIMBOOT_MODE@" color = "#cc241d" align = "left"} 
+}
